@@ -8,7 +8,7 @@ function declare() {
   hamburger_menu = document.querySelector(".hamburger-menu");
 }
 
-const main = document.querySelector("main");
+const main = document.querySelector("master");
 
 declare();
 
