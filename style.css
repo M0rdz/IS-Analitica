@@ -45,7 +45,6 @@ a {
 }
 
 .fixed-header {
-  top: 0;
   width: 100%;
   position: fixed;
   background: #fff;
@@ -65,7 +64,7 @@ a {
 }
 
 header {
-  background-color: white;
+  background-color: var(--backgroundColor);
   position: relative;
   z-index: 70;
 }
