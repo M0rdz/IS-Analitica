@@ -601,6 +601,25 @@ textarea  {
     grid-template-columns: 1fr 1fr;
   }
 
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .page-header .container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 2rem;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-box div {
+    flex-basis: 100%;
+  }
+
 }
 
 @media screen and (max-width: 470px) {
@@ -619,4 +638,26 @@ textarea  {
   .showcase-area .btn {
     font-size: 0.8rem;
   }
+
+  .contact-box div {
+    flex-basis: 30%;
+  }
+
+  .contact-left {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-right {
+    align-items: center;
+  }
+
+  .features_container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
 }
