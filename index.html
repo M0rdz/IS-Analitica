@@ -217,35 +217,43 @@
                     <div class="contact-box"></div>
                     <div class="contact-left">
                         <h3>Estamos a un click de distancia</h3>
-                        <form action="">
+                        <form action="" name="myForm" onsubmit="return(validate());">
                             <div class="input-row">
                                 <div class="input-group">
                                     <label>Nombre</label>
-                                    <input type="text">
+                                    <input type="text" name="nombre">
                                 </div>
                                 <div class="input-group">
                                     <label>Email</label>
-                                    <input type="email" >
+                                    <input type="email" name="email">
                                 </div>
                                 <div class="input-group">
                                     <label>Tel&eacute;fono</label>
-                                    <input type="text">
+                                    <input type="text" name="telefono">
                                 </div>
                                 <div class="input-group">
                                     <label>Empresa</label>
-                                    <input type="text">
+                                    <input type="text" name="empresa">
                                 </div>
                                 <div class="input-group">
                                     <label>Estado/regi&oacute;n</label>
-                                    <input type="text">
+                                    <input type="text" name="estado">
                                 </div>
                             </div>
 
                             <label>Mensaje</label>
                             <textarea rows="5"></textarea>
-                            <button class="ctc" type="submit">Enviar</button>
+                            <p class="contactForm" id="demo"></p>
+                            <button class="ctc" type="submit" value="submit">Enviar</button>
                         </form>
                     </div>
+
+                    <button id="myBtn" onclick="topFunction()" title="Go to top">
+                        <span class="material-icons">
+                            expand_less
+                        </span>
+                    </button>
+
                 </div>
             </section>
 
