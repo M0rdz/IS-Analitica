@@ -15,3 +15,49 @@ function events() {
 }
 
 events();
+
+//Validar Datos del formulario de Contacto
+
+function validate() {
+  var text;
+  if(document.myForm.nombre.value == ""){
+    text = "Rellena este campo obligatorio.";
+    document.getElementById("demo").innerHTML = text;
+    document.myForm.nombre.focus();
+    return false;
+  }
+  if(document.myForm.email.value == "" ){
+    text = "Rellena este campo obligatorio.";
+    document.myForm.email.focus() ;
+    return false;
+  }
+
+  var emailID = document.myForm.email.value;
+  atposn = emailID.indexOf("@");
+  dotposn = emailID.lastIndexOf(".");
+  if (atposn < 1 || ( dotposn - atposn < 2 )) {
+  text = "Ingrese un correo valido";
+  document.getElementById("demo").innerHTML = text;
+  document.myForm.email.focus() ;
+  return false;
+}
+  if(document.myForm.telefono.value == "" || isNaN( document.myForm.telefono.value ) || document.myForm.telefono.value.length != 10 ) {
+    text = "Ingrese un numero valido de 10 digitos";
+    document.getElementById("demo").innerHTML = text;
+    document.myForm.telefono.focus() ;
+    return false;
+  }
+  if(document.myForm.empresa.value == ""){
+    text = "Rellena este campo obligatorio."
+    document.getElementById("demo").innerHTML = text;
+    document.myForm.empresa.focus();
+    return false;
+  }
+  if(document.myForm.estado.value == ""){
+    text = "Rellena este campo obligatorio."
+    document.getElementById("demo").innerHTML = text;
+    document.myForm.estado.focus();
+    return false;
+  }
+  return( true );
+}
