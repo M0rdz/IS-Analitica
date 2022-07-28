@@ -32,6 +32,7 @@ function validate() {
     return false;
   }
 
+  //Validar que el correo contega arrobas y punto
   var emailID = document.myForm.email.value;
   at = emailID.indexOf("@");
   dot = emailID.lastIndexOf(".");
@@ -41,7 +42,7 @@ function validate() {
   document.myForm.email.focus() ;
   return false;
 }
-  if(document.myForm.telefono.value == "" || isNaN( document.myForm.telefono.value ) || document.myForm.telefono.value.length != 10 ) {
+  if(document.myForm.telefono.value == "" || isNaN( document.myForm.telefono.value ) || document.myForm.telefono.value.length != 10 ) { //Validar que se ingresan 10 digitos
     text = "Ingrese un numero valido de 10 digitos";
     document.getElementById("demo").innerHTML = text;
     document.myForm.telefono.focus() ;
