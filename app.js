@@ -33,9 +33,9 @@ function validate() {
   }
 
   var emailID = document.myForm.email.value;
-  atposn = emailID.indexOf("@");
-  dotposn = emailID.lastIndexOf(".");
-  if (atposn < 1 || ( dotposn - atposn < 2 )) {
+  at = emailID.indexOf("@");
+  dot = emailID.lastIndexOf(".");
+  if (at < 1 || ( dot - at < 2 )) {
   text = "Ingrese un correo valido";
   document.getElementById("demo").innerHTML = text;
   document.myForm.email.focus() ;
