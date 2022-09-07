@@ -91,3 +91,13 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
   loader.style.display = "none";
 })
+
+var getData = function(){
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var tel = document.getElementById("telefono").value;
+  var empresa = document.getElementById("empresa").value;
+  var estado = document.getElementById("nombre").value;
+  var mensaje = document.getElementById("demo").value;
+  console.log(nombre+" "+email+" "+tel+" "+empresa+" "+estado+" "+mensaje);
+}

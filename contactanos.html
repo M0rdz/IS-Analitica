@@ -55,34 +55,34 @@
                     </p>
                     <div class="contact-box">
                         <div class="contact-left">
-                            <form action="" name="myForm" onsubmit="return(validate());">
+                            <form action="http://127.0.0.1:5501/process_post" name="myForm" onsubmit="return(validate());" method="POST">
                                 <div class="input-row">
                                     <div class="input-group">
                                         <label>Nombre</label>
-                                        <input type="text" name="nombre">
+                                        <input type="text" name="nombre" id="nombre">
                                     </div>
                                     <div class="input-group">
                                         <label>Email</label>
-                                        <input type="text" name="email">
+                                        <input type="text" name="email" id="email">
                                     </div>
                                     <div class="input-group">
                                         <label>Tel&eacute;fono</label>
-                                        <input type="text" name="telefono">
+                                        <input type="text" name="telefono" id="telefono">
                                     </div>
                                     <div class="input-group">
                                         <label>Empresa</label>
-                                        <input type="text" name="empresa">
+                                        <input type="text" name="empresa" id="empresa">
                                     </div>
                                     <div class="input-group">
                                         <label>Estado/regi&oacute;n</label>
-                                        <input type="text" name="estado">
+                                        <input type="text" name="estado" id="estado">
                                     </div>
                                 </div>
 
                                 <label>Mensaje</label>
-                                <textarea"" rows="5"></textarea>
-                                <p class="contactForm" id="demo"></p>
-                                <button class="ctc" type="submit" value="submit">Enviar</button>
+                                <textarea rows="5"></textarea>
+                                <p class="contactForm" name="mensaje" id="demo"></p>
+                                <button class="ctc" type="submit" value="submit" onclick="getData()">Enviar</button>
                             </form>
                         </div>
 
@@ -144,6 +144,7 @@
     </main>
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <script src="./app.js"></script>
+    <script src="./post.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
